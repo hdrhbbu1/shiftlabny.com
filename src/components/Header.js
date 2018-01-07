@@ -49,8 +49,7 @@ const HeaderWrapper = styled.div`
   justify-content: space-between;
   position: sticky;
   width: 100%;
-  background-color: ${({ isScrolled }) =>
-    isScrolled ? colors.yellow1 : "white"};
+  background-color: ${({ isScrolled }) => (isScrolled ? colors.yellow1 : "white")};
   padding: 1.5em 0 0.5em 0.5em;
   top: 0;
   transition: all 0.325s ease-in-out;
