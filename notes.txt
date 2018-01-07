@@ -1,0 +1,13 @@
+Pages:
+
+- Home
+- About
+- Work
+- Studio
+- News
+- Contact
+
+Content Models: 
+
+- Projects
+- News Posts
