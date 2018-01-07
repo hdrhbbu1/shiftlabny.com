@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import Link from "gatsby-link";
 
 import colors from "../colors";
+import Nav from "./Nav";
 
 class Header extends Component {
   constructor() {
@@ -31,16 +33,20 @@ class Header extends Component {
   }
 
   render() {
-    console.log(this.state);
     return (
       <HeaderWrapper isScrolled={this.state.isScrolled}>
-        <HeaderTitle>Shift.</HeaderTitle>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <HeaderTitle>Shift.</HeaderTitle>
+        </Link>
+        <Nav />
       </HeaderWrapper>
     );
   }
 }
 
 const HeaderWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
   position: sticky;
   width: 100%;
   background-color: ${({ isScrolled }) =>
@@ -51,6 +57,7 @@ const HeaderWrapper = styled.div`
 `;
 
 const HeaderTitle = styled.h1`
+  color: ${colors.fontBlack};
   font-size: 28px;
   text-transform: uppercase;
   margin-bottom: 0.3em;
