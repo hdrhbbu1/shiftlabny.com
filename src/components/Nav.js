@@ -6,7 +6,7 @@ import colors from "../colors";
 
 const OuterNav = styled.nav`
   margin-right: 2em;
-  transition: all 0.5s ease-in-out;
+  transition: right 0.5s ease-in-out;
 
   @media screen and (max-width: 768px) {
     position: absolute;
