@@ -10,5 +10,5 @@
   "rules": {
     "prettier/prettier": ["error"]
   },
-  "extends": ["prettier"]
+  "extends": ["plugin:prettier/recommended"]
 }

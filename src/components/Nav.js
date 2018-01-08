@@ -87,21 +87,17 @@ class Nav extends Component {
   }
 
   render() {
-    const CloseMenu = () => (
-      <ToggleNav onClick={this.toggleNav}>Close Menu</ToggleNav>
-    );
+    const CloseMenu = () => <ToggleNav onClick={this.toggleNav}>Close Menu</ToggleNav>;
 
     const ShowMenu = () => <ToggleNav onClick={this.toggleNav}>Menu</ToggleNav>;
 
-    const NavListItems = ["about", "work", "studio", "news", "contact"].map(
-      to => (
-        <NavListItem key={to}>
-          <NavLink to={`/${to}`} onClick={this.toggleNav}>
-            {to}
-          </NavLink>
-        </NavListItem>
-      )
-    );
+    const NavListItems = ["about", "work", "studio", "news", "contact"].map(to => (
+      <NavListItem key={to}>
+        <NavLink to={`/${to}`} onClick={this.toggleNav}>
+          {to}
+        </NavLink>
+      </NavListItem>
+    ));
 
     return (
       <div>

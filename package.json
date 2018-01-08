@@ -8,6 +8,7 @@
     "gatsby-link": "^1.6.32",
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-styled-components": "^2.0.4",
+    "lodash": "^4.17.4",
     "styled-components": "^2.4.0"
   },
   "keywords": [
